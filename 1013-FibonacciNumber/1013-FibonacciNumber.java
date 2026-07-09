@@ -1,0 +1,16 @@
+// Last updated: 7/9/2026, 9:14:47 AM
+
+class Solution {
+    public int fib(int n) {
+        if (n<=1) return n;
+        int x=0;
+        int y=1;
+        int z=0;
+        for(int i=2;i<=n;i++){
+            z=x+y;
+            x=y;
+            y=z;
+        }
+        return z;
+    }
+}
